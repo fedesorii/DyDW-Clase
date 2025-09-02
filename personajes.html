@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-      <nav>
+      <nav class="navBar">
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="personajes.html">Personajes</a></li>
@@ -15,23 +16,30 @@
       </nav>
         <ul>
           <li><p>Equipo 7</p></li>
-          <li><a href="#Naruto"></a>Naruto Uzumaki</li>
-          <li><a href="#Sasuke"></a>Sasuke Uchiha</li>
-          <li><a href="#Sakura"></a>Sakura Haruno</li>
-          <li><a href="#Kakashi"></a>Kakashi Hatake</li>
+          <li><a href="#Naruto">Naruto Uzumaki</a></li>
+          <li><a href="#Sasuke">Sasuke Uchiha</a></li>
+          <li><a href="#Sakura">Sakura Haruno</a></li>
+          <li><a href="#Kakashi">Kakashi Hatake</a></li>
         </ul>
 
-        <h3 id="Naruto">Naruto Uzumaki</h3>
-        <img src="Imagenes/Naruto.jpg" height="300" alt="Naruto Uzumaki" />
-
-        <h3 id="Sasuke">Sasuke Uchiha</h3>
-        <img src="Imagenes/Sasuke.webp" height="300" alt="Sasuke Uchiha" />
-
-        <h3 id="Sakura">Sakura Haruno</h3>
-        <img src="Imagenes/Sakura.jpeg" height="300" alt="Sakura Haruno" />
-
-        <h3 id="Kakashi">Kakashi Hatake</h3>
-        <img src="Imagenes/Kakashi.jpeg" height="300" alt="Kakashi Hatake" />
+        <div class="personajes-grid">
+          <div class="personaje-item">
+            <h3 id="Naruto">Naruto Uzumaki</h3>
+            <img src="Imagenes/Naruto.jpg" alt="Naruto Uzumaki" />
+          </div>
+          <div class="personaje-item">
+            <h3 id="Sasuke">Sasuke Uchiha</h3>
+            <img src="Imagenes/Sasuke.webp" alt="Sasuke Uchiha" />
+          </div>
+          <div class="personaje-item">
+            <h3 id="Sakura">Sakura Haruno</h3>
+            <img src="Imagenes/Sakura.jpeg" alt="Sakura Haruno" />
+          </div>
+          <div class="personaje-item">
+            <h3 id="Kakashi">Kakashi Hatake</h3>
+            <img src="Imagenes/Kakashi.jpeg" alt="Kakashi Hatake" />
+          </div>
+        </div>
       </main>
       <footer>
         <p>Este es el Footer</p>
