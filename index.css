@@ -1,3 +1,8 @@
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* Estilos generales */
 body {
   background-color: rgb(174, 255, 228);
@@ -34,14 +39,14 @@ h3 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
-  z-index: 10;
 }
 
 .navBar ul {
   display: flex;
-  justify-content: center;
+  /* justify-content: space-around; */
   align-items: center;
-  width: 100vw;
+  width: 100%;
+  border-radius: 0%;
   background-color: rgb(187, 132, 49);
   margin: 0;
   padding: 0;
@@ -56,7 +61,6 @@ h3 {
   padding: 10px;
   position: relative;
   text-align: center;
-  transition: background 0.2s;
 }
 
 .navBar li a {
@@ -94,6 +98,16 @@ main img {
 }
 
 /* Estilos para personajes.html */
+.personajes-list {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.personajes-list a {
+  color: #b85c2e;
+  text-decoration: none;
+}
+
 .personajes-grid {
   display: flex;
   justify-content: center;
@@ -112,10 +126,11 @@ main img {
 }
 
 .personaje-item img {
-  width: 100%;
-  height: auto;
+  width: 90%;
+  height: fit-content;
   max-height: 220px;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: top;
   border-radius: 10px;
   margin-bottom: 8px;
 }
@@ -138,6 +153,12 @@ main img {
   }
 }
 @media (max-width: 600px) {
+  .navBar ul {
+    flex-direction: column;
+  }
+  .navBar ul li a {
+    text-align: center;
+  }
   .personajes-grid {
     flex-direction: column;
     align-items: center;
